@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* banner section */
+        #banner{
+            /* border: 5px solid; */
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            height: 350px;
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            background-color: blue;
+            border-radius: 20px;
+        }
+
+        #banner>div{
+            /* border: 2px solid red; */
+            height: 150px;
+            width: 350px;
+            margin-top: 150px;
+            margin-left: 80px;
+            line-height: 10px;
+            color: white;
+            text-align: center;
+        }
+
+         #banner>div>button{
+            border-radius: 5px;
+            border: 0;
+            margin-left: 10px;
+            background-color: white;
+         }
+
+
+         /* service section */
+
+         #service{
+            /* border: 2px solid; */
+            /* height: 250px; */
+            width: 90%;
+            margin: auto;
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            gap: 20px;
+
+         }
+
+         .img{
+            /* border: 2px solid; */
+            /* width: 20%; */
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+         }
+
+         .img>img{
+            /* border: 2px solid red; */
+            background-color: skyblue;
+            width: 100%;
+            border-radius: 15px;
+            
+         }
+
+
+
+         /* work section */
+
+         h2,p{
+            text-align: center;
+            /* line-height: 10px;     */
+         }
+
+         #work{
+            /* border: 5px solid; */
+            /* height: 350px; */
+            /* width: 90%; */
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+         }
+
+         .work_img{
+            /* border: 2px solid; */
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            /* text-align: center;    */
+            /* margin: 30px; */
+         }
+
+         
+        .work_img>img{
+            /* border: 2px solid red; */
+            width: 100%;
+            background-color: skyblue;
+         }
+
+         /* media q */
+
+         /* banner section  */
+
+         /* small screen */
+
+         @media all and (min-width:320px) and (max-width:480px){
+            #banner{
+                flex-direction: column;
+            }
+            #banner>div{
+                text-align: center;
+                margin: auto;
+            }
+
+            #banner>img{
+                width: 100%;
+                height: 200px;
+            }
+            
+             /* service section */
+             #service{
+                grid-template-columns: repeat(2,1fr);
+             }
+
+             /* word section  */
+
+             #work{
+                grid-template-columns: repeat(1,1fr);
+             }
+            }
+
+            /* tablet screen */
+
+            @media all and (min-width:481px) and (max-width:769px){
+            #banner{
+                flex-direction: column;
+            }
+            #banner>div{
+                text-align: center;
+                margin: auto;
+            }
+
+            #banner>img{
+                width: 100%;
+                height: 200px;
+            }
+            
+             /* service section */
+             #service{
+                grid-template-columns: repeat(3,1fr);
+             }
+
+             /* word section  */
+
+             #work{
+                grid-template-columns: repeat(2,1fr);
+             }
+            }
+
+    </style>
+</head>
+<body>
+
+    <!-- banner section -->
+    <div id="banner">
+        <div>
+            <h1>You Are In Safe Hands</h1>
+            <p>Lorem ipsum dolor sit amet</p>
+            <button>Know More</button>
+        </div>
+        <img src="https://www.practostatic.com/consumer-home/practo-care/1631634827/dweb_hero_banner.png" alt="">
+    </div>
+
+    <!-- service section -->
+     <div id="service">
+        <div class="img">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="">
+         
+            <h3>Instant Video Consulation</h3>
+            <p>Connet within 60 secs</p>
+        </div>
+         <div class="img">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="">
+         
+            <h3>Instant Video Consulation</h3>
+            <p>Connet within 60 secs</p>
+        </div> <div class="img">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="">
+         
+            <h3>Instant Video Consulation</h3>
+            <p>Connet within 60 secs</p>
+        </div> <div class="img">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="">
+         
+            <h3>Instant Video Consulation</h3>
+            <p>Connet within 60 secs</p>
+        </div> <div class="img">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="">
+         
+            <h3>Instant Video Consulation</h3>
+            <p>Connet within 60 secs</p>
+        </div> <div class="img">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="">
+         
+            <h3>Instant Video Consulation</h3>
+            <p>Connet within 60 secs</p>
+        </div>
+     </div>
+
+     <!-- work section -->
+        <h2>Book an appointment for an in-clinic consulation</h2>
+        <p>find experinced doctors across all specialties</p>
+
+        <div id="work">
+            <div class="work_img">
+            <img src=" https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h3>Dentist</h3>
+            <p>Teething trouble? Schedul a dental Checkup</p>
+           </div>
+            <div class="work_img">
+            <img src=" https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h3>Dentist</h3>
+            <p>Teething trouble? Schedul a dental Checkup</p>
+           </div>
+            <div class="work_img">
+            <img src=" https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h3>Dentist</h3>
+            <p>Teething trouble? Schedul a dental Checkup</p>
+           </div>
+            <div class="work_img">
+            <img src=" https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h3>Dentist</h3>
+            <p>Teething trouble? Schedul a dental Checkup</p>
+           </div>
+            <div class="work_img">
+            <img src=" https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h3>Dentist</h3>
+            <p>Teething trouble? Schedul a dental Checkup</p>
+           </div>
+            <div class="work_img">
+            <img src=" https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h3>Dentist</h3>
+            <p>Teething trouble? Schedul a dental Checkup</p>
+           </div>
+            <div class="work_img">
+            <img src=" https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h3>Dentist</h3>
+            <p>Teething trouble? Schedul a dental Checkup</p>
+           </div>
+            <div class="work_img">
+            <img src=" https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h3>Dentist</h3>
+            <p>Teething trouble? Schedul a dental Checkup</p>
+           </div>
+        </div>
+</body>
+</html>
